@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu dialog patient -->
+    <string-array name="menu_dialog_patient">
+        <item>Tester</item>
+        <item>Mätresultat</item>
+        <item>Redigera patient</item>
+        <item>Ta bort patient</item>
+        <!--<item>Log patients</item>-->
+    </string-array>
+
+    <!-- The tests -->
+    <string-array name="tests_names_array">
+        <item>EQ5D</item>
+        <item>VAS - Visuell Analog Skala</item>
+        <item>TUG - Timed UP and GO</item>
+        <item>6 min gångtest</item>
+        <item>Bergs balansskala</item>
+        <item>BDL</item>
+        <item>IMF - Index of Muscle Function</item>
+        <item>FSA - Funktionsskattning Skuldra Arm</item>
+        <item>Ergometercykeltest</item>
+        <item>BASMI - Bath Ankylosing Spondylitis Metrology Index</item>
+        <item>TST - Timed Stands Test</item>
+    </string-array>
+
+    <string-array name="tests_codes_array">
+        <item>EQ5D</item>
+        <item>VAS</item>
+        <item>TUG</item>
+        <item>6MIN</item>
+        <item>BERGS</item>
+        <item>BDL</item>
+        <item>IMF</item>
+        <item>FSA</item>
+        <item>ERGO</item>
+        <item>BASMI</item>
+        <item>TST</item>
+    </string-array>
+
+    <!-- MIN6 - BORGS Spinner values -->
+    <!-- String between quotes, so spinner respect spaces -->
+    <string-array name="min6_sp_rpe_values">
+        <item>-</item>
+        <item>6</item>
+        <item>7 Mycket, mycket lätt</item>
+        <item>8</item>
+        <item>9 Mycket lätt</item>
+        <item>10</item>
+        <item>11 Ganska lätt</item>
+        <item>12</item>
+        <item>13 Något ansträngande</item>
+        <item>14</item>
+        <item>15 Ansträngande</item>
+        <item>16</item>
+        <item>17 Mycket ansträngande</item>
+        <item>18</item>
+        <item>19 Mycket, mycket ansträngande</item>
+        <item>20 Maximal</item>
+    </string-array>
+
+    <string-array name="min6_sp_cr10_values">
+        <item>-</item>
+        <item>0 Ingen</item>
+        <item>0.3</item>
+        <item>0.5 Mycket, mycket lätt</item>
+        <item>1 Mycket lätt</item>
+        <item>1.5</item>
+        <item>2 Lätt</item>
+        <item>2.5"</item>
+        <item>3 Måttlig</item>
+        <item>4"</item>
+        <item>5 Kraftig</item>
+        <item>6"</item>
+        <item>7 Mycket kraftig</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10 Mycket, mycket kraftig</item>
+        <item>11</item>
+        <item>* Högsta möjliga</item>
+    </string-array>
+
+    <!-- IMF Spinner values -->
+    <string-array name="spinner_values_1">
+        <item>-</item>
+        <item>0 = hälen kan placeras ovanpå motsatt knä</item>
+        <item>1 = hälen kan flytas halvvägs upp på motsatt underben</item>
+        <item>2 = hälen kan ej lyftas halvvägs upp på motsatt underben</item>
+    </string-array>
+    <string-array name="spinner_values_2">
+        <item>-</item>
+        <item>0 = gång inomhus ua</item>
+        <item>1 = går med vissa svårigheter</item>
+        <item>2 = uttalade gångsvårigheter och behöver gånghjälpmedel</item>
+    </string-array>
+    <string-array name="spinner_values_3">
+        <item>-</item>
+        <item>0 = går utan svårighet</item>
+        <item>1 = går med svårighet</item>
+        <item>2 = går ej</item>
+    </string-array>
+    <string-array name="spinner_values_4">
+        <item>-</item>
+        <item>0 = går utan svårighet</item>
+        <item>1 = går med svårighet</item>
+        <item>2 = går ej</item>
+    </string-array>
+    <string-array name="spinner_values_5">
+        <item>-</item>
+        <item>0 = >89º</item>
+        <item>1 = 45–89º</item>
+        <item>2 = 0–44º</item>
+    </string-array>
+    <string-array name="spinner_values_6">
+        <item>-</item>
+        <item>0 = går utan svårighet</item>
+        <item>1 = orkar ej lyfta helt</item>
+        <item>2 = går ej</item>
+    </string-array>
+    <string-array name="spinner_values_7">
+        <item>-</item>
+        <item>0 = >29 s</item>
+        <item>1 = 15–29 s</item>
+        <item>2 = 0–14 s</item>
+    </string-array>
+    <string-array name="spinner_values_8">
+        <item>-</item>
+        <item>0 = >29 s</item>
+        <item>1 = 15–29 s</item>
+        <item>2 = 0–14 s</item>
+    </string-array>
+    <string-array name="spinner_values_9">
+        <item>-</item>
+        <item>0 = går utan svårighet</item>
+        <item>1 = går med svårighet</item>
+        <item>2 = går ej</item>
+    </string-array>
+    <string-array name="spinner_values_10">
+        <item>-</item>
+        <item>0 = >14 ggr</item>
+        <item>1 = 8–14 ggr</item>
+        <item>2 = 0–7 ggr</item>
+    </string-array>
+    <string-array name="spinner_values_11">
+        <item>-</item>
+        <item>0 = >29 s</item>
+        <item>1 = 15–29 s</item>
+        <item>2 = 0–14 s</item>
+    </string-array>
+    <string-array name="spinner_values_12">
+        <item>-</item>
+        <item>0 = >11 ggr</item>
+        <item>1 = 6–11 ggr</item>
+        <item>2 = 0–5 ggr</item>
+    </string-array>
+    <string-array name="spinner_values_13">
+        <item>-</item>
+        <item>0 = >11 ggr</item>
+        <item>1 = 6–11 ggr</item>
+        <item>2 = 0–5 ggr</item>
+    </string-array>
+
+    <!-- BERGS Spinner values -->
+    <string-array name="bergs_spinner_array_1">
+        <item>-</item>
+        <item>4 = kan ställa sig upp utan att använda händerna och själv hitta balansen</item>
+        <item>3 = kan ställa sig upp självständige med hjälp av händerna</item>
+        <item>2 = kan ställa sig upp med hjälp av händerna efter flera försök</item>
+        <item>1 = behöver minimal hjälp av en person för att ställa sig upp eller för att hitta balansen</item>
+        <item>0 = behöver måttlig ett maximal hjälp av en eller flera personer för att ställa sig upp</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_2">
+        <item>-</item>
+        <item>4 = kan stå säkert i 2 minuter</item>
+        <item>3 = kan stå 2 minuter med tillsyn</item>
+        <item>2 = kan stå 30 sekunder utan stöd</item>
+        <item>1 = behöver flera försök för att stå 30 sekunder utan stöd</item>
+        <item>0 = kan inte stå 30 sekunder utan stöd</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_3">
+        <item>-</item>
+        <item>4 = kan sitta tryggt och säkert i 2 minuter</item>
+        <item>3 = kan sitta 2 minuter med tillsyn</item>
+        <item>3 = kan sitta 2 minuter med tillsyn</item>
+        <item>2 = kan sitta i 30 sekunder</item>
+        <item>1 = kan sitta i 10 sekunder</item>
+        <item>0 = kan inte sitta 10 sekunder utan stöd</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_4">
+        <item>-</item>
+        <item>4 = sätter sig ned på ett säkert sätt med minimal hjälp av händerna</item>
+        <item>3 = kontrollerar nedsittningen med hjälp av händerna</item>
+        <item>2 =  använder baksidan av benen mot stolen för att kontrollera nedsittningen</item>
+        <item>1 = sätter sig självständigt men okontrollerat</item>
+        <item>0 = behöver hjälp av en person för att sätta sig ned</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_5">
+        <item>-</item>
+        <item>4 = kan förflytta sig säkert med minimal hjälp av händerna</item>
+        <item>3 = kan förflytta sig säkert med påtaglig hjälp av händerna</item>
+        <item>2 = kan förflytta sig med hjälp av muntliga ledtrådar och/eller tillsyn</item>
+        <item>1 = behöver hjälp av en personer</item>
+        <item>0 = behöver hjälp av två personer</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_6">
+        <item>-</item>
+        <item>4 = kan stå säkert i 10 sekunder</item>
+        <item>3 = kan stå10 sekunder med tillsyn</item>
+        <item>2 = kan stå i 3 sekunder</item>
+        <item>1 = står stilla men måste öppna ögonen inom 3 sekunder</item>
+        <item>0 = behöver hjälp för att inte falla</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_7">
+        <item>-</item>
+        <item>4 = kan självständigt sätta fötterna intill varandra och stå säkert i 1 minut</item>
+        <item>3 = kan självständigt sätta fötterna intill varandra och stå 1 minut med tillsyn</item>
+        <item>2 = kan självständigt sätta fötterna intill varandra men kan inte stå kvar i 1 minut</item>
+        <item>1 = behöver hjälp för att inta ställningen men kan stå 15 sekunder med fötterna intill varandra</item>
+        <item>0 = behöver hjälp för att inta ställningen och kan inte stå kvar i 15 sekunder</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_8">
+        <item>-</item>
+        <item>4 = kan sträcka sig framåt på ett säkert sätt mer än 25 cm</item>
+        <item>3 = kan sträcka sig framåt på ett säkert sätt mer än 12 cm</item>
+        <item>2 = kan sträcka sig framåt på ett säkert sätt mer än 5 cm</item>
+        <item>1 = sträcker sig framåt men behöver tillsyn</item>
+        <item>0 = tappar balansen vid försök/behöver yttre stöd</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_9">
+        <item>-</item>
+        <item>4 = kan ta upp skon lätt och på ett säkert sätt</item>
+        <item>3 = kan ta upp skon men behöver tillsyn</item>
+        <item>2 = kan inte ta upp skon, men når 2,5-5 cm från skon och håller självständigt balansen</item>
+        <item>1 = kan inte ta upp skon och behöver tillsyn vid försöket</item>
+        <item>0 = kan inte försöka/behöver hjälp för att inte tappa balansen</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_10">
+        <item>-</item>
+        <item>4  = tittar bakåt åt båda hållen och roterar i hela kroppen</item>
+        <item>3 = tittar bakåt åt ena hållet, mindre god rotation åt andra hållet</item>
+        <item>2 = vrider endast åt sidorna men bibehåller balansen</item>
+        <item>1 = behöver tillsyn under vridrörelsen</item>
+        <item>0 = behöver städ för att inte falla</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_11">
+        <item>-</item>
+        <item>4 = kan vända säkert 360 grader på 4 sekunder eller mindre</item>
+        <item>3 = kan vända säkert 360 grader endast åt ena hållet på 4 sekunder eller mindre</item>
+        <item>2 = kan säkert men långsamt vända 360 grader</item>
+        <item>1 = behöver tillsyn eller muntliga ledtrådar</item>
+        <item>0 = behöver stöd under vändningen</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_12">
+        <item>-</item>
+        <item>4 = kan stå självständigt och säkert och klarar att sätta upp varje fot 4 gånger på 20 sekunder</item>
+        <item>3 = kan stå självständigt och klarar att sätta upp varje fot 4 gånger på mer än 20 sekunder</item>
+        <item>2 = kan klara att sätta upp varje fot 2 gånger utan hjälp men med tillsyn</item>
+        <item>1 = kan klara mer än 1 gång med varje fot med minimal hjälp</item>
+        <item>0 = behöver hjälp för att inte falla/kan inte försöka</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_13">
+        <item>-</item>
+        <item>4 = kan självständigt sätta fötterna i tandemställning och stå kvar i 30 sekunder</item>
+        <item>3 =  kan självständigt sätta  en fot framför den andra och stå kvar i 30 sekunder</item>
+        <item>2 =  kan självständigt flytta en fot framåt – dock ej framför den andra foten – och stå kvar 30 sekunder</item>
+        <item>1 = behöver hjälp med att flytta en fot framåt men kan stå kvar i 15 sekunder</item>
+        <item>0 = tappar balansen under steget eller i stående</item>
+    </string-array>
+    <string-array name="bergs_spinner_array_14">
+        <item>-</item>
+        <item>4 = kan självständigt lyfta benet och stå kvar i minst 10 sekunder</item>
+        <item>3 = kan självständigt lyfta benet och stå kvar i 5 sekunder</item>
+        <item>2 =  kan självständigt lyfta benet och stå kvar i 3 sekunder</item>
+        <item> 1 = försöker lyfta benet men kan inte stå kvar på ett ben i 3 sekunder, kan dock stå självständigt</item>
+        <item>0 = kan inte försöka lyfta benet eller behöver hjälp för att inte falla</item>
+    </string-array>
+
+    <!-- FSA Spinner values -->
+    <string-array name="fsa_spinner_array">
+        <item>-</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- ERGO Spinner values -->
+    <string-array name="ergo_gender_spinner">
+        <item>-</item>
+        <item>Man</item>
+        <item>Kvinna</item>
+    </string-array>
+
+    <string-array name="ergo_belas_spinner_male">
+        <item>-</item>
+        <item>300 (50w)</item>
+        <item>450 (75w)</item>
+        <item>600 (100w)</item>
+        <item>750 (125w)</item>
+        <item>900 (150w)</item>
+        <item>1050 (175w)</item>
+        <item>1200 (200w)</item>
+        <item>1350 (225w)</item>
+        <item>1500 (250w)</item>
+    </string-array>
+
+    <string-array name="ergo_belas_spinner_female">
+        <item>-</item>
+        <item>300 (50w)</item>
+        <item>450 (75w)</item>
+        <item>600 (100w)</item>
+        <item>750 (125w)</item>
+        <item>900 (150w)&#160;&#160;</item>
+    </string-array>
+
+    <!-- TUG spinner -->
+    <string-array name="tug_help_spinner">
+        <item>-</item>
+        <item>rollator</item>
+        <item>käpp</item>
+        <item>1 kkp</item>
+        <item>2 kkp</item>
+        <item>ortos</item>
+    </string-array>
+
+    <!-- 6MIN spinner -->
+    <string-array name="min6_help_spinner">
+        <item>-</item>
+        <item>rollator</item>
+        <item>käpp</item>
+        <item>1 kkp</item>
+        <item>2 kkp</item>
+        <item>ortos</item>
+    </string-array>
+
+</resources>

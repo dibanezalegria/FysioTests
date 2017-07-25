@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/basg_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/basg_q1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basfi_margin_questions"
+            android:text="@string/basg1_markera"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basg_slider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Ingen"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Mycket svår"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basg_q2"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/basg2_markera"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basg_slider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Ingen"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Mycket svår"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <!-- Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp">
+
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="BASG-1 (0-10p, 0p = ua)"/>
+
+            <TextView
+                android:id="@+id/basg_result1"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:ems="3"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="BASG-2 (0-10p, 0p = ua)"/>
+
+            <TextView
+                android:id="@+id/basg_result2"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:ems="3"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/basg_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

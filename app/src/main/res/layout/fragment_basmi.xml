@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/basmi_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <!-- Q1 -->
+        <TextView
+            android:id="@+id/basmi_tv_q1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/basmi_q1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Hö (grader)"/>
+
+            <EditText
+                android:id="@+id/basmi_et_h_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Vä (grader)"/>
+
+            <EditText
+                android:id="@+id/basmi_et_v_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Medelvärde"/>
+
+            <EditText
+                android:id="@+id/basmi_et_medel_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Poäng"/>
+
+            <EditText
+                android:id="@+id/basmi_et_points_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="2"/>
+
+        </LinearLayout>
+
+        <!-- Q2 -->
+        <TextView
+            android:id="@+id/basmi_tv_q2"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/basmi_question_margin_top"
+            android:text="@string/basmi_q2"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Antal cm"/>
+
+            <EditText
+                android:id="@+id/basmi_et_cm_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Poäng"/>
+
+            <EditText
+                android:id="@+id/basmi_et_points_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <!-- Q3 -->
+        <TextView
+            android:id="@+id/basmi_tv_q3"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/basmi_question_margin_top"
+            android:text="@string/basmi_q3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Hö (cm)"/>
+
+            <EditText
+                android:id="@+id/basmi_et_h_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Vä (cm)"/>
+
+            <EditText
+                android:id="@+id/basmi_et_v_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Medelvärde"/>
+
+            <EditText
+                android:id="@+id/basmi_et_medel_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Poäng"/>
+
+            <EditText
+                android:id="@+id/basmi_et_points_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <!-- Q4 -->
+        <TextView
+            android:id="@+id/basmi_tv_q4"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/basmi_question_margin_top"
+            android:text="@string/basmi_q4"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Antal cm"/>
+
+            <EditText
+                android:id="@+id/basmi_et_cm_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Poäng"/>
+
+            <EditText
+                android:id="@+id/basmi_et_points_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <!-- Q5 -->
+        <TextView
+            android:id="@+id/basmi_tv_q5"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/basmi_question_margin_top"
+            android:text="@string/basmi_q5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Antal cm"/>
+
+            <EditText
+                android:id="@+id/basmi_et_cm_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/basmi_answers_margin_start">
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="start"
+                android:text="Poäng"/>
+
+            <EditText
+                android:id="@+id/basmi_et_points_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="3"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="BASMI Total (0-10, 0 = ua)"
+                android:textAppearance="@style/TextCustomLarge"
+                />
+
+            <TextView
+                android:id="@+id/basmi_total_sum_tv"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:minEms="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/basmi_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_spara"
+            android:text="SPARA"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

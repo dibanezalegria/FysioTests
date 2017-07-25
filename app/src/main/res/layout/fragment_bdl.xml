@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/bdl_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/bdl_tv_1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q1"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p   0-6s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  >6s – 20s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  >20s – 40s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  >40s – 60s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  >60s"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q2"
+            />
+
+        <TextView
+            android:id="@+id/bdl_tv_2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="10dp"
+            android:text="a. Stǻr på höger ben"
+            android:textAppearance="@style/TextCustomSmall"/>
+
+        <RadioGroup
+            android:id="@+id/bdl_rg2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p   0-6s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  >6s – 20s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  >20s – 40s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  >40s – 60s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  >60s"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="10dp"
+            android:text="b. Stǻr på vänster ben"
+            android:textAppearance="@style/TextCustomSmall"/>
+
+        <RadioGroup
+            android:id="@+id/bdl_rg2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p   0-6s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  >6s – 20s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  >20s – 40s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  >40s – 60s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  >60s"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_3"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q3"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0p  kan inte blunda och stå på ett ben samtidigt"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  >1s – 6s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  >6s – 13s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  >13s – 20s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  >20s"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_4"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q4"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  kan inte stå i tandemstående"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  kan stå i tandemstående men gå mindre än 5 steg"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  kan gå 5 steg men mindre än 15 steg med vändningen"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  kan gå 15 steg och vända men mindre än 15 steg tillbaka"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  kan gå 2 x 15 steg med vändning"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_5"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q5"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  kan inte stå i tandemstående"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  kan stå i tandemstående"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  kan gå 2 steg men mindre än 8 steg"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  kan gå 8 steg men mindre än 15 steg"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  kan gå 15 steg"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_6"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q6"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  kan ej balansera kopp på fat utan att spilla"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  kan balansera kopp på fat, men gå mindre än 2,5 m utan att spilla"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  kan gå 2,5 m men mindre än 5 m och vända utan att spilla"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  kan gå 5 m och vända men mindre än 5 m tillbaka utan att spilla"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  kan gå 2 x 5 m med vändning utan att spilla"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_7"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q7"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  klarar ej 1 omgång utan att rotera bröst- och ländrygg"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  klarar 1 omgång"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  klarar 2 omgång"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  klarar 3 omgång"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  klarar 4 eller fler omgångar"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_8"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q8"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  kommer ej upp"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  kommer upp med minst en fotsula på stolen, ingen kroppsdel i golvet"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  står med stöd för händerna"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  står utan stöd för händerna"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="4p  står med sträckta knän och höfter, klarar att hålla minst en arm sträckt framför sig med 90 grader i axelleden. Patienten ska från den utgångspositionen sträcka sig något framåt, så synlig tyngdpunktsförskjutning sker"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_9"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q9"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  kan inte hoppa"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  hoppar på stället och sätter direkt i andra foten efteråt"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  hoppar ett hopp på stället och står kvar minst 5 s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  hoppar ett hopp 2 dm och står kvar minst 5 s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p hoppar två hopp 2 dm och står kvar minst 5 s  mellan varje hopp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bdl_tv_10"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bdl_question_margin_top"
+            android:text="@string/bdl_string_q10"
+            />
+
+        <RadioGroup
+            android:id="@+id/bdl_rg10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bdl_rg_margin_start"
+            android:layout_marginTop="@dimen/bdl_rg_margin_top">
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0p  klarar mindre än 3 steg upp reciprok gång "/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1p  klarar reciprok gång 3 steg men mindre än 10 steg upp"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2p  klarar reciprok gång 10 steg upp men mindre än 10 steg ner"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3p  klarar reciprok gång 10 steg upp och ner på mer än 20 s"/>
+
+            <RadioButton
+                style="@style/bdl_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4p  klarar reciprok gång 10 steg upp och ner på mindre än 20 s"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Total summa (0-44 p, 44p = ua)"
+                android:textAppearance="@style/TextCustomLarge"/>
+
+            <TextView
+                android:id="@+id/bdl_total_sum_tv"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:minEms="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bdl_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_spara"
+            android:text="SPARA"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

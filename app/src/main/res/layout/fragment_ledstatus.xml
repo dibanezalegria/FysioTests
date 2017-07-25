@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/ledstatus_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <!-- Q1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/ledstatus_q1"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q1_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="45°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q1_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Extension"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="80°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q1_rotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Rotation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_rotation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_rotation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="80°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q1_latflex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Lat.flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_latflex_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q1_latflex_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="45°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q2"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q2_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_flexion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_flexion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="180°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q2_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Extension"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_extension_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_extension_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="60°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q2_abduktion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Abduktion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_abduktion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_abduktion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="180°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q2_utåtrotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Utåtrotation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_utåtrotation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_utåtrotation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="90°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q2_inåtrotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Inåtrotation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_inåtrotation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q2_inåtrotation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="70°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q3"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q3_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_flexion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_flexion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="150°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q3_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Extension"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_extension_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_extension_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="0°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q3_pronation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Pronation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_pronation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_pronation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="70°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q3_supination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Supination"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_supination_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q3_supination_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="85°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q4"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q4_dorsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Dorsalflexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_dorsal_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_dorsal_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="70°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q4_volar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Volarflexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_volar_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_volar_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="80°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q4_knyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Knytdiastas"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_knyt_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q4_knyt_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="0°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q5"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q5_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_flexion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_flexion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="120°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q5_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Extension"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_extension_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_extension_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="30°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q5_abduktion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Abduktion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_abduktion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_abduktion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="45°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q5_utåtrotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Utåtrotation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_utåtrotation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_utåtrotation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="45°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q5_inåtrotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Inåtrotation"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_inåtrotation_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q5_inåtrotation_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="40°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q6 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q6"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q6_flexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Flexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q6_flexion_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q6_flexion_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="135°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q6_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Extension"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q6_extension_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q6_extension_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="0° -+ 10°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Q7 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ledstatus_q7"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text=""
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Hö"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Vä"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="Normalvärde"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q7_dorsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Dorsalflexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q7_dorsal_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q7_dorsal_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="20°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/ledstatus_tv_q7_plantar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Plantarflexion"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q7_plantar_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/ledstatus_et_q7_plantar_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ledstatus_between_columns"
+                android:ems="5"
+                android:gravity="center"
+                android:text="50°"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ledstatus_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

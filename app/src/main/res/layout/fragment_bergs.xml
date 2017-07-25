@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/bergs_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/bergs_tv1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bergs_string_q1"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan ställa sig upp utan att använda händerna och själv hitta balansen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan ställa sig upp självständig med hjälp av händerna"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan ställa sig upp med hjälp av händerna efter flera försök"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver minimal hjälp av en person för att ställa sig upp eller för att hitta balansen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver måttlig eller maximal hjälp av en eller flera personer för att ställa sig upp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv2"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q2"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan stå säkert i 2 minuter"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan stå 2 minuter med tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan stå 30 sekunder utan stöd"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver flera försök för att stå 30 sekunder utan stöd"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = kan inte stå 30 sekunder utan stöd"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_om_patienten"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/bergs_tv3"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q3"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan sitta tryggt och säkert i 2 minuter"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan sitta 2 minuter med tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan sitta i 30 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = kan sitta i 10 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = kan inte sitta 10 sekunder utan stöd"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv4"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q4"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = sätter sig ned på ett säkert sätt med minimal hjälp av händerna"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kontrollerar nedsittningen med hjälp av händerna"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = använder baksidan av benen mot stolen för att kontrollera nedsittningen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = sätter sig självständigt men okontrollerat"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver hjälp av en person för att sätta sig ned"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv5"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q5"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan förflytta sig säkert med minimal hjälp av händerna"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan förflytta sig säkert med påtaglig hjälp av händerna"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan förflytta sig med hjälp av muntliga ledtrådar och/eller tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver hjälp av en personer"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver hjälp av två personer"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv6"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q6"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan stå säkert i 10 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan stå 10 sekunder med tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan stå i 3 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = står stilla men måste öppna ögonen inom 3 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver hjälp för att inte falla"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv7"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q7"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan självständigt sätta fötterna intill varandra och stå säkert i 1 minut"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan självständigt sätta fötterna intill varandra och stå 1 minut med tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan självständigt sätta fötterna intill varandra men kan inte stå kvar i 1 minut"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver hjälp för att inta ställningen men kan stå 15 sekunder med fötterna intill varandra"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver hjälp för att inta ställningen och kan inte stå kvar i 15 sekunder"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv8"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q8"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan sträcka sig framåt på ett säkert sätt mer än 25 cm"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan sträcka sig framåt på ett säkert sätt mer än 12 cm"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan sträcka sig framåt på ett säkert sätt mer än 5 cm"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = sträcker sig framåt men behöver tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = tappar balansen vid försök/behöver yttre stöd"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv9"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q9"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan ta upp skon lätt och på ett säkert sätt"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan ta upp skon men behöver tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan inte ta upp skon, men når 2,5-5 cm från skon och håller självständigt balansen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = kan inte ta upp skon och behöver tillsyn vid försöket"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = kan inte försöka/behöver hjälp för att inte tappa balansen"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv10"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q10"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4  = tittar bakåt åt båda hållen och roterar i hela kroppen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = tittar bakåt åt ena hållet, mindre god rotation åt andra hållet"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = vrider endast åt sidorna men bibehåller balansen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver tillsyn under vridrörelsen"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver stöd för att inte falla"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv11"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q11"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan vända säkert 360 grader på 4 sekunder eller mindre"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan vända säkert 360 grader endast åt ena hållet på 4 sekunder eller mindre"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan säkert men långsamt vända 360 grader"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver tillsyn eller muntliga ledtrådar"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver stöd under vändningen"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv12"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q12"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan stå självständigt och säkert och klarar att sätta upp varje fot 4 gånger på 20 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan stå självständigt och klarar att sätta upp varje fot 4 gånger på mer än 20 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = kan klara att sätta upp varje fot 2 gånger utan hjälp men med tillsyn"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = kan klara mer än 1 gång med varje fot med minimal hjälp"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = behöver hjälp för att inte falla/kan inte försöka"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv13"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q13"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan självständigt sätta fötterna i tandemställning och stå kvar i 30 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 =  kan självständigt sätta  en fot framför den andra och stå kvar i 30 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 =  kan självständigt flytta en fot framåt – dock ej framför den andra foten – och stå kvar 30 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = behöver hjälp med att flytta en fot framåt men kan stå kvar i 15 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = tappar balansen under steget eller i stående"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bergs_tv14"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bergs_question_margin_top"
+            android:text="@string/bergs_string_q14"
+            />
+
+        <RadioGroup
+            android:id="@+id/bergs_rg14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/bergs_rg_margin_start"
+            android:layout_marginTop="@dimen/bergs_rg_margin_top">
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = kan självständigt lyfta benet och stå kvar i minst 10 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = kan självständigt lyfta benet och stå kvar i 5 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 =  kan självständigt lyfta benet och stå kvar i 3 sekunder"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = försöker lyfta benet men kan inte stå kvar på ett ben i 3 sekunder, kan dock stå självständigt"/>
+
+            <RadioButton
+                style="@style/bergs_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = kan inte försöka lyfta benet eller behöver hjälp för att inte falla"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Total summa (0-56 p, 56p = ua)"
+                android:textAppearance="@style/TextCustomLarge"/>
+
+            <TextView
+                android:id="@+id/bergs_total_sum_tv"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:minEms="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bergs_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_spara"
+            android:text="SPARA"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

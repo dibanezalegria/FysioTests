@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollview"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/tug_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/tug_tv_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tug_instructions"
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tug_tv_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="Sekunder"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <EditText
+                android:id="@+id/tug_et_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tug_tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:layout_gravity="center_vertical"
+                android:text="Gånghjälpmedel"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/tug_help_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="32dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tug_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_spara"
+            android:text="SPARA"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

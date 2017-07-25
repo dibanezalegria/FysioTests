@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/ergo_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Kön"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_grey_100"
+                        android:paddingEnd="6dp">
+
+                        <Spinner
+                            android:id="@+id/ergo_gender_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_belas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="5"
+                        android:text="Belastning"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_grey_100"
+                        android:paddingEnd="6dp">
+
+                    <Spinner
+                        android:id="@+id/ergo_belas_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_cykel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Cykel"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_cykel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_question">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_sadel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Sadelhöjd"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_sadel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:text="cm"
+                        android:textAppearance="@style/TextCustomNormal"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_question">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_vikt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Kroppsvikt"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_vikt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:text="kg"
+                        android:textAppearance="@style/TextCustomNormal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_question">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_längd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Längd"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_längd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:text="cm"
+                        android:textAppearance="@style/TextCustomNormal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_question">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_ålder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Ålder"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_ålder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_question">
+
+                    <TextView
+                        android:id="@+id/ergo_tv_vilo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="Vilopuls"
+                        android:textAppearance="@style/TextCustomNormal"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_vilo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/TextCustomLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:text="Resultat"/>
+
+                    <TextView
+                        android:id="@+id/ergo_tv_result"
+                        style="@style/total_sum_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:ems="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text=" ml/kg x min"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextCustomLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:text="Interval"/>
+
+                    <TextView
+                        android:id="@+id/ergo_tv_interval"
+                        style="@style/total_sum_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:ems="4"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ergo_btnDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button_spara"
+                    android:text="RÄKNA UT / SPARA"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="2dp"
+                android:layout_marginTop="48dp"
+                android:layout_weight="40"
+                android:background="@drawable/border_only_blue_grey_100"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="6dp"
+                android:paddingTop="32dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextCustomLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="Minuter"/>
+
+                    <TextView
+                        android:id="@+id/ergo_tv_pulse"
+                        style="@style/TextCustomLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:text="Puls"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="1"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="2"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="3"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="4"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="5"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="6"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="7"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="8"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="9"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="10"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="11"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ergo_margin_top_pulse">
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="12"/>
+
+                    <EditText
+                        android:id="@+id/ergo_et_pulse12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="3"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

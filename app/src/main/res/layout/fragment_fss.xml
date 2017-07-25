@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/fss_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/fss_tv_q1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Min motivation försämras när jag är trött"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q2"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="2. Min trötthet försämras av motion"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q3"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="3. Jag blir lätt trött"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q4"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="4. Trötthet påverkar min fysiska aktivitet negativt"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q5"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="5. Trötthet orsakar ofta problem för mig"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q6"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="6. Trötthet hindrar mig från att utföra en långvarig fysisk aktivitet"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q7"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="7. Trötthet påverkar utförandet av vissa plikter och åtaganden negativt"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q8"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="8. Trötthet är ett av mina tre mest handikappande symtom"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fss_tv_q9"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fss_margin_top_question"
+            android:text="9. Trötthet påverkar mitt arbete, mitt familjeliv eller sociala liv negativt"/>
+
+        <RadioGroup
+            android:id="@+id/fss_rg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group"
+            android:layout_marginTop="@dimen/fss_margin_top_radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                style="@style/fsa_text_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fss_margin_start_radio_group"
+            android:layout_marginStart="@dimen/fss_margin_start_radio_group">
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inte alls"/>
+
+            <TextView
+                style="@style/TextCustomSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Helt och hållet"/>
+        </LinearLayout>
+
+        <!-- Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp">
+
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Resultat (1-7, 1 = ua)"/>
+
+            <TextView
+                android:id="@+id/fss_result"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:ems="2"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fss_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+</ScrollView>

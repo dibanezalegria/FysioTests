@@ -1,0 +1,57 @@
+<resources>
+    <dimen name="fragment_title_padding">26dp</dimen>
+
+    <!-- VAS ___________________________________________________________________________________ -->
+    <!-- Padding for slider including scale and output -->
+    <dimen name="vas_slider_padding_top">48dp</dimen>
+    <!-- Text size for output text views -->
+    <dimen name="vas_output_text_size">26sp</dimen>
+    <dimen name="vas_default_text_size">26sp</dimen>
+
+    <!-- MÄTRESULTAT ____________________________________________________________________________-->
+    <dimen name="mat_padding">8dp</dimen>
+
+    <!-- IMF ___________________________________________________________________________________ -->
+    <!-- Margin start radio groups -->
+    <dimen name="imf_margin_start">20dp</dimen>
+
+    <!-- BERGS __________________________________________________________________________________-->
+    <dimen name="bergs_rg_margin_start">5dp</dimen>
+    <dimen name="bergs_rg_margin_top">10dp</dimen>
+    <dimen name="bergs_question_margin_top">26dp</dimen>
+
+    <!-- BDL ____________________________________________________________________________________-->
+    <dimen name="bdl_rg_margin_start">5dp</dimen>
+    <dimen name="bdl_rg_margin_top">10dp</dimen>
+    <dimen name="bdl_question_margin_top">15dp</dimen>
+
+    <!-- BASMI __________________________________________________________________________________-->
+    <dimen name="basmi_question_margin_top">26dp</dimen>
+    <dimen name="basmi_answers_margin_start">48dp</dimen>
+
+    <!-- FSA ___________________________________________________________________________________ -->
+    <!-- Margin start radio groups -->
+    <dimen name="fsa_margin_start">6dp</dimen>
+    <dimen name="fsa_padding_box_text">6dp</dimen>
+    <dimen name="fsa_margin_between_questions">32dp</dimen>
+
+    <!-- BASFI _________________________________________________________________________________ -->
+    <dimen name="basfi_margin_questions">32dp</dimen>
+    <dimen name="basfi_margin_question_slider">16dp</dimen>
+
+    <!-- BASDAI ________________________________________________________________________________ -->
+    <dimen name="basdai_margin_questions">32dp</dimen>
+    <dimen name="basdai_margin_question_slider">16dp</dimen>
+
+    <!-- LEDSTATUS _____________________________________________________________________________ -->
+    <dimen name="ledstatus_between_columns">32dp</dimen>
+
+    <!-- FSS ___________________________________________________________________________________ -->
+    <dimen name="fss_margin_top_question">32dp</dimen>
+    <dimen name="fss_margin_top_radio_group">16dp</dimen>
+    <dimen name="fss_margin_start_radio_group">16dp</dimen>
+
+    <!-- Ergo __________________________________________________________________________________ -->
+    <dimen name="ergo_margin_top_question">26dp</dimen>
+    <dimen name="ergo_margin_top_pulse">16dp</dimen>
+</resources>

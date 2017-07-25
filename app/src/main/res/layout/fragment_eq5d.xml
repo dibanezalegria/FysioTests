@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/eq5d_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <!-- Hälsotillstånd termometer slider -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <!-- Nuvarande hälsotillstånd seek bar -->
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuvarande hälsotillstånd"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- Title Label -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="85"
+                    android:gravity="start"
+                    />
+
+                <!-- Output -->
+                <TextView
+                    android:id="@+id/eq5d_hälso_output_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="15"
+                    android:background="@drawable/slider_output_box_blue"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/vas_output_text_size"
+                    />
+            </LinearLayout>
+
+            <!-- SeekBar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <SeekBar
+                    android:id="@+id/eq5d_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seek_bar_progress_in"
+                    android:thumb="@drawable/seekbar_thumb_states" />
+            </LinearLayout>
+
+            <!-- Values labels -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="100"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blue_grey_100"/>
+
+        <TextView
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Markera, genom att kryssa i en ruta i varje nedanstående grupp, vilket påstående som bäst beskriver Ditt hälsotillstånd i dag."/>
+
+        <TextView
+            android:id="@+id/eq5d_tv_1"
+            style="@style/TextCustomLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Rörlighet"/>
+
+        <RadioGroup
+            android:id="@+id/eq5d_radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/eq5d_radio11"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag går utan svårigheter"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio12"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag kan gå men med viss svårighet"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio13"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag är sängliggande"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/eq5d_tv_2"
+            style="@style/TextCustomLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Hygien"/>
+
+        <RadioGroup
+            android:id="@+id/eq5d_radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/eq5d_radio21"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag behöver ingen hjälp med min dagliga hygien, mat eller påklädning"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio22"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag har vissa problem att tvätta eller klä mig själv"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio23"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag kan inte tvätta eller klä mig själv"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/eq5d_tv_3"
+            style="@style/TextCustomLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Huvudsakliga aktiviteter (t ex arbete, studier, hushållssysslor, familje- och fritidsaktiviteter)"/>
+
+        <RadioGroup
+            android:id="@+id/eq5d_radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/eq5d_radio31"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag klarar av mina huvudsakliga aktiviteter"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio32"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag har vissa problem med att klara av mina huvudsakliga aktiviteter"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio33"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag klarar inte  av mina huvudsakliga aktiviteter"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/eq5d_tv_4"
+            style="@style/TextCustomLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Smärtor/besvär"/>
+
+        <RadioGroup
+            android:id="@+id/eq5d_radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/eq5d_radio41"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag har varken smärtor eller besvär"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio42"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag har måttliga smärtor eller besvär"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio43"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag har svåra smärtor eller besvär"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/eq5d_tv_5"
+            style="@style/TextCustomLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Oro/nedstämdhet"/>
+
+        <RadioGroup
+            android:id="@+id/eq5d_radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/eq5d_radio51"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag är inte orolig eller nedstämd"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio52"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag är orolig eller nedstämd i viss utsträckning"
+                />
+
+            <RadioButton
+                android:id="@+id/eq5d_radio53"
+                style="@style/eq5d_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jag är i högsta grad orolig eller nedstämd"
+                />
+        </RadioGroup>
+
+        <!-- Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Resultat (-0.594 - 1.0, 1.0 = full hälsa)"/>
+
+            <TextView
+                android:id="@+id/eq5d_result"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:minEms="4"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/eq5d_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>
+
+    

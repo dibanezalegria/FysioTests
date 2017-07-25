@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/basdai_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basdai_markera"/>
+
+        <TextView
+            android:id="@+id/basdai_q1"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q1"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basdai_slider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Lätt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Omöjligt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basdai_q2"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q2"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basdai_slider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Lätt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Omöjligt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basdai_q3"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q3"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basdai_slider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Lätt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Omöjligt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basdai_q4"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q4"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basdai_slider4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Lätt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Omöjligt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basdai_q5"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q5"/>
+
+        <!-- SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <SeekBar
+                android:id="@+id/basdai_slider5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_progress_in"
+                android:thumb="@drawable/seekbar_thumb_states"/>
+        </LinearLayout>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Lätt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Omöjligt"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/basdai_q6"
+            style="@style/TextCustomNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_questions"
+            android:text="@string/basdai_q6"/>
+
+        <SeekBar
+            android:id="@+id/basdai_slider6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basdai_margin_question_slider"
+            android:max="8"
+            android:progress="0"
+            android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:thumb="@drawable/seekbar_thumb_states"/>
+
+        <!-- Labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0 tim"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:text="1/2"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1 tim"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="36dp"
+                android:text="1 1/2"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="2 tim/fl."
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+        <!-- Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp">
+
+            <TextView
+                style="@style/TextCustomLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="BASDAI (0-10p, 0p = ua)"/>
+
+            <TextView
+                android:id="@+id/basdai_result"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:ems="3"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/basdai_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+</ScrollView>

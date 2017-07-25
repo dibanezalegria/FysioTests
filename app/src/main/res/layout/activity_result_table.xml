@@ -1,0 +1,2383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pbluedotsoft.fysio.ResultTableActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_800"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Mätresultat"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Table -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_grey_50_darker"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IN"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="UT"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_50">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:text="6-minuters gångtest - antal meter"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_meter_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_meter_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Hjälpmedel"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_help_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_help_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_50">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Borgs - Smärta, CR10 vid teststart (0-->)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_cr10_start_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_cr10_start_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Borgs - Smärta, CR10 vid avslutat (0-->)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_cr10_end_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_cr10_end_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_50">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Borgs - Ansträngning, RPE vid teststart (6, 20)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_rpe_start_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_rpe_start_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Borgs - Ansträngning, RPE vid avslutat test (6, 20)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_rpe_end_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_rpe_end_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_50">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Startpuls"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_start_pulse_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_start_pulse_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Slutpuls"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_end_pulse_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_6min_end_pulse_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="TST - Timed Stands Test/Tidsåtgång i sek"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tst_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tst_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tst_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_50">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Med/utan skor"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tst_shoes_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tst_shoes_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="TUG - Timed Up and Go/Tidsåtgång i sek"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tug_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tug_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tug_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Ev. Gånghjälpmedel"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tug_help_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_tug_help_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Ergometri konditionsprov/Testvärde (ml O2/kg*min)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_result_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_result_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_result_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Belastning (300-1500 kpm)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_belas_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_belas_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Kroppsvikt (kg)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_vikt_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_vikt_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Ålder"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_ålder_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_ålder_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Längd (cm)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_längd_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ergo_längd_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="VAS - Kondition (0-100 mm, 0=ingen kondition)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_kon_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_kon_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="VAS - Smärta (0-100mm, 0=ingen smärta)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_sma_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_sma_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="VAS - Stelhet (0-100mm, 0=ingen stelhet)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_ste_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_ste_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="VAS - Trötthet (0-100mm, 0=ingen trötthet)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_tro_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_vas_tro_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="EQ-5D (-0,594-1,0 1,0=full hälsa)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_eq5d_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_eq5d_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_eq5d_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="EQ-5D Nuvarande hälsotillstånd (0-100mm, 100=bästa tänkbara)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_eq5d_health_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_eq5d_health_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IPAQ - Fysisk aktivitet (kategori 1-3)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ipaq_fysisk_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ipaq_fysisk_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ipaq_fysisk_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IPAQ - Sittande min/dag"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ipaq_sittande_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ipaq_sittande_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="FSS - Fatigue Severy Scale (1-7, 1=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fss_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fss_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fss_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IMF - Funktionsstatus - nedre extremiteter (0-40p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_imf_result_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_imf_result_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_imf_result_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Bergs balansskala (0-56p, 56p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bergs_result_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bergs_result_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bergs_result_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BDL balansskala (0-44p, 44p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bdl_result_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bdl_result_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_bdl_result_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BASDAI (0-10p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basdai_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basdai_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basdai_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BASFI (0-10p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basfi_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basfi_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basfi_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BASG-1 (0-10p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basg1_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basg1_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basg1_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BASG-2 (0-10p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basg2_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basg2_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="BASMI (0-10p, 0p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basmi_result_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basmi_result_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_basmi_result_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Ott - flexion (Normalvärde: 3 cm)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ottflex_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ottflex_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ottflex_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Ott - Extension (Normalvärde: 2 cm)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ottext_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_ottext_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Thoraxexkursion (Normalvärde: 6-10 cm)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_thorax_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_thorax_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_thorax_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/results_table_border_only"
+                android:padding="@dimen/mat_padding"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="HÖGER"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="VÄNSTER"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@color/red_600"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="FSA - Funktionskattning skuldra-arm"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IN"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="UT"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IN"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="UT"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Funktion: Summa (5-30p, 30p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_sum_h_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_sum_h_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_sum_v_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_sum_v_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Smärta: Summa (0-inf, 0=ingen smärta)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_h_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_h_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_v_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_v_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="18"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="TOTAL SUMMA"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="IN"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:text="UT"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Funktion: (5-60p, 60p=ua)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_total_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_total_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_light_bg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@drawable/results_table_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Smärta: (0-inf, 0=ingen smärta)"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_total_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:id="@+id/table_fsa_smart_total_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/results_table_border_only"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/results_table_border_only"
+                    android:gravity="center"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:text="*"
+                    android:textColor="@color/red_600"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:text="kommentar"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

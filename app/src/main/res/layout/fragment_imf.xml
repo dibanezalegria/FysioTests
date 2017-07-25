@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/imf_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Allmän rörelse- och muskelfunktion"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="1. Sittande med 90° i höftleder"
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"
+                />
+
+            <RadioGroup
+                android:id="@+id/imf_rg1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = hälen kan placeras ovanpå motsatt knä"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = hälen kan flyttas halvvägs upp på motsatt underben"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = hälen kan ej lyftas halvvägs upp på motsatt underben"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg1v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"
+                />
+
+            <RadioGroup
+                android:id="@+id/imf_rg1v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = hälen kan placeras ovanpå motsatt knä"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = hälen kan flyttas halvvägs upp på motsatt underben"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = hälen kan ej lyftas halvvägs upp på motsatt underben"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/imf_tv_rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="2. Allmän gångfunktion inomhus"
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = gång inomhus ua"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = går med vissa svårigheter"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = uttalade gångsvårigheter och behöver gånghjälpmedel"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summa (0-6p)"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/imf_sum1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/imf_tv_sum"
+                android:gravity="center"
+                android:minEms="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:text="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="Muskelstyrka"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="3. Sittande på 45 cm höjd. Resa sig upp på ett ben med andra benet som balansstöd (häl i ungefärlig linje med tårna på testbenet) och utan handstöd. Testbenets häl placeras nedanför(lite bakom stolskant."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg3h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"
+                />
+
+            <RadioGroup
+                android:id="@+id/imf_rg3h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = går med svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg3v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg3v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = går med svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="4. Stående kliva upp på en psoaskudde (30cm) med höger respektive vänster ben först och utan handstöd."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg4h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg4h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = går med svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg4v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg4v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = går med svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/imf_tv_rg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="5. Stående bilat knäflexion med hela ryggen intill en vägg och hälarna 15 cm från vägg. Patienten ska klara både flexion och uppresning. Vinkelmätning med goniometer."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = >89º"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = 45–89º"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = 0–44º"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="6. Krokliggande, dvs ryggliggande med flekterade knän, fötterna och överarmarna på britsen, underarmar mot magen. Bäckenlyft och därefter extension av först höger knäled, omedelbart återgång till krokliggande, dito vänster. Benet ska ej vila mot underlaget vid extension."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg6h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg6h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 - går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = orkar ej lyfta helt"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg6v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg6v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = går utan svårighet"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = orkar ej lyfta helt"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = går ej"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summa (0-14p)"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/imf_sum2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/imf_tv_sum"
+                android:gravity="center"
+                android:minEms="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:text="2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="Balans och koordination"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="7. Stå på ett ben. Seende och med blicken riktad rakt fram i ögonhöjd."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg7h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg7h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >29 s"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 15–29 s"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–14 s"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg7v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg7v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >29 s"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 15–29 s"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–14 s"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/imf_tv_rg8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="8. Stå med fötterna tätt ihop blundande."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = >29 s"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = 15–29 s"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = 0–14 s"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/imf_tv_rg9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="9. Gång på 2 m linje. Sätt ena foten precis framför den andra."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = går utan svårighet"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = går med svårighet"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = går ej"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/imf_tv_rg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="10. Funktionell gång på stället med växelvis motsatt arm och benlyft i snabbt tempo i 15 s. Patienten får prova en gång med vardera diagonalen för att rörelsen ska kunna utföras på rätt sätt."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = >14 ggr"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = 8–14 ggr"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = 0–7 ggr"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summa (0-10p)"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/imf_sum3_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/imf_tv_sum"
+                android:gravity="center"
+                android:minEms="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:text="3"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="Uthållighet"
+            android:textAppearance="@style/TextCustomLarge"/>
+
+        <TextView
+            android:id="@+id/imf_tv_rg11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="11. Krokliggande (se nr 6). Utförs genom att glutealmuskulaturen spännes och därefter lyfts bäckenet."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <RadioGroup
+            android:id="@+id/imf_rg11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start">
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = >29 s"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 = 15–29 s"/>
+
+            <RadioButton
+                style="@style/imf_text_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 = 0–14 s"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="12. Ryggliggande. Enkelt benlyft till 30 – 45º med extenderat knä och fotled i nolläge. Dynamiskt lyft i snabbt tempo i 15 s."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg12h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg12h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 6–11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–5 ggr"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg12v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg12v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 6–11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–5 ggr"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="13. Sidliggande med trochantern riktad mot taket och undre benet flekterat. Dynamiska lyft av övre benets abduktorer till horisontalplanet i snabbt tempo i 15 s."
+            android:textAppearance="@style/TextCustomNormal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/imf_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imf_tv_rg13h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Höger"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg13h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 6–11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–5 ggr"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/imf_tv_rg13v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vänster"
+                android:textAppearance="@style/TextCustomSmall"/>
+
+            <RadioGroup
+                android:id="@+id/imf_rg13v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 = >11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 = 6–11 ggr"/>
+
+                <RadioButton
+                    style="@style/imf_text_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 = 0–5 ggr"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summa (0-10p)"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/imf_sum4_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/imf_tv_sum"
+                android:gravity="center"
+                android:minEms="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:text="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Total summa (0-40 p, 0p = ua)"
+                android:textAppearance="@style/TextCustomLarge"/>
+
+            <TextView
+                android:id="@+id/imf_total_sum_tv"
+                style="@style/total_sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:minEms="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imf_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_spara"
+            android:text="@string/done_button"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.pbluedotsoft.fysio">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="com.pbluedotsoft.fysio.data.DbProvider"
+            android:authorities="com.pbluedotsoft.fysio"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.pbluedotsoft.fysio.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pbluedotsoft.fysio.PatientsActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.LoginActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity
+            android:name="com.pbluedotsoft.fysio.UserRegistrationActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.pbluedotsoft.fysio.AdminActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.LoginActivity"/>
+        <activity
+            android:name="com.pbluedotsoft.fysio.TestListActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.PatientsActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity
+            android:name="com.pbluedotsoft.fysio.ResultTableActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.PatientsActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity
+            android:name="com.pbluedotsoft.fysio.TestActivity"
+            android:parentActivityName="com.pbluedotsoft.fysio.TestListActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_in"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        tools:context="com.example.android.vinter_1.TestActivity">
+
+        <LinearLayout
+            android:id="@+id/fsa_layout_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp">
+
+            <!-- Q1 -->
+            <TextView
+                android:id="@+id/fsa_tv_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fsa_q1"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fsa_margin_start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="2dp"
+                        android:text="Hö"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="4dp"
+                        android:text="Vä"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a1"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_11h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_11v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a2"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_12h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text=""/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_12v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a3"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_13h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text=""/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_13v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a4"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_14h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text=""/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_14v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a5"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_15h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text=""/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_15v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q1_a6"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_16h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text=""/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_16v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fsa_tv_smart_1"
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="end"
+                        android:text="Smärta (0-10)"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hö"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_1h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Vä"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_1v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Q2 -->
+            <TextView
+                android:id="@+id/fsa_tv_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fsa_margin_between_questions"
+                android:text="@string/fsa_q2"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fsa_margin_start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="2dp"
+                        android:text="Hö"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="4dp"
+                        android:text="Vä"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a1"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_21h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_21v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a2"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_22h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_22v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a3"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_23h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_23v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a4"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_24h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_24v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a5"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_25h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_25v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q2_a6"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_26h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_26v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fsa_tv_smart_2"
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="end"
+                        android:text="Smärta (0-10)"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hö"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_2h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Vä"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_2v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Q3 -->
+            <TextView
+                android:id="@+id/fsa_tv_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fsa_margin_between_questions"
+                android:text="@string/fsa_q3"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fsa_margin_start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="2dp"
+                        android:text="Hö"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="4dp"
+                        android:text="Vä"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a1"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_31h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_31v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a2"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_32h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_32v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a3"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_33h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_33v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a4"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_34h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_34v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a5"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_35h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_35v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q3_a6"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_36h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_36v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fsa_tv_smart_3"
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="end"
+                        android:text="Smärta (0-10)"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hö"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_3h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Vä"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_3v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Q4 -->
+            <TextView
+                android:id="@+id/fsa_tv_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fsa_margin_between_questions"
+                android:text="@string/fsa_q4"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fsa_margin_start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="2dp"
+                        android:text="Hö"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="4dp"
+                        android:text="Vä"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a1"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_41h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_41v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a2"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_42h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_42v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a3"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_43h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_43v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a4"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_44h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_44v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a5"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_45h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_45v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q4_a6"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_46h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_46v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fsa_tv_smart_4"
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="end"
+                        android:text="Smärta (0-10)"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hö"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_4h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Vä"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_4v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Q5 -->
+            <TextView
+                android:id="@+id/fsa_tv_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fsa_margin_between_questions"
+                android:text="@string/fsa_q5"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fsa_margin_start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="2dp"
+                        android:text="Hö"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingStart="4dp"
+                        android:text="Vä"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a1"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_51h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_51v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a2"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_52h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_52v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a3"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_53h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_53v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a4"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_54h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_54v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a5"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_55h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_55v"
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/fsa_text_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="84"
+                        android:text="@string/fsa_q5_a6"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_56h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+
+                    <RadioButton
+                        android:id="@+id/fsa_btn_56v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fsa_tv_smart_5"
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="end"
+                        android:text="Smärta (0-10)"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Hö"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_5h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        style="@style/TextCustomNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:text="Vä"/>
+
+                    <EditText
+                        android:id="@+id/fsa_et_5v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="9"
+                    android:text="Funktion Hö/Vä/Total\n(10-60p, 60p = ua)"
+                    android:textAppearance="@style/TextCustomLarge"/>
+
+                <TextView
+                    android:id="@+id/fsa_h_sum_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+
+                <TextView
+                    style="@style/TextCustomLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"/>
+
+                <TextView
+                    android:id="@+id/fsa_v_sum_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+
+                <TextView
+                    style="@style/TextCustomLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="="/>
+
+                <TextView
+                    android:id="@+id/fsa_total_sum_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="9"
+                    android:text="Smärta Hö/Vä/Total\n(0-100, 0 = ua)"
+                    android:textAppearance="@style/TextCustomLarge"/>
+
+                <TextView
+                    android:id="@+id/fsa_h_smart_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+
+                <TextView
+                    style="@style/TextCustomLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"/>
+
+                <TextView
+                    android:id="@+id/fsa_v_smart_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+
+                <TextView
+                    style="@style/TextCustomLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="="/>
+
+                <TextView
+                    android:id="@+id/fsa_total_smart_tv"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fsa_btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_spara"
+                android:text="@string/done_button"
+                android:textAppearance="@style/TextCustomNormal"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_in"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            tools:context="com.pbluedotsoft.fysio.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/min6_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/min6_tv_meters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="5"
+            android:text="Antal meter"
+            android:textAppearance="@style/TextCustomLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                style="@style/TextCustomNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="| = 30 m"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="20dp">
+
+            <ImageButton
+                android:id="@+id/min6_btn_meter_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:tint="@color/blue_grey_900"
+                />
+
+            <EditText
+                android:id="@+id/min6_et_meters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/min6_btn_meter_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_add_white_24dp"
+                android:tint="@color/blue_grey_900"/>
+
+            <TextView
+                android:id="@+id/min6_tv_meter_ticks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/min6_border_ticks"
+                android:gravity="start"
+                android:paddingBottom="4dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:textSize="26sp"
+                tools:text="||||| |||||"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="5"
+                android:text="Hjälpmedel"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/min6_help_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="32dp"
+                    android:paddingStart="6dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Puls"
+            android:textAppearance="@style/TextCustomLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_start_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="Startpuls"
+                android:textAppearance="@style/TextCustomNormal"
+                />
+
+            <EditText
+                android:id="@+id/min6_et_start_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_finish_pulse"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="Slutpuls"
+                android:textAppearance="@style/TextCustomNormal"
+                />
+
+            <EditText
+                android:id="@+id/min6_et_finish_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Borgs CR10 skala"
+            android:textAppearance="@style/TextCustomLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_cr10_test_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minEms="5"
+                android:text="Teststart"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/min6_sp_cr10_test_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_cr10_test_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minEms="5"
+                android:text="Avslutat"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/min6_sp_cr10_test_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Borgs ansträngningsskala (RPE)"
+            android:textAppearance="@style/TextCustomLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_rpe_test_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minEms="5"
+                android:text="Teststart"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/min6_sp_rpe_test_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/min6_tv_rpe_test_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minEms="5"
+                android:text="Avslutat"
+                android:textAppearance="@style/TextCustomNormal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_grey_100"
+                android:paddingEnd="6dp">
+
+                <Spinner
+                    android:id="@+id/min6_sp_rpe_test_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/min6_btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_spara"
+            android:text="SPARA"
+            android:textAppearance="@style/TextCustomNormal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

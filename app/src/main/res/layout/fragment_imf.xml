@@ -174,7 +174,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="3. Sittande på 45 cm höjd. Resa sig upp på ett ben med andra benet som balansstöd (häl i ungefärlig linje med tårna på testbenet) och utan handstöd. Testbenets häl placeras nedanför(lite bakom stolskant."
+            android:text="3. Sittande på 45 cm höjd. Resa sig upp på ett ben med andra benet som balansstöd (häl i ungefärlig linje med tårna på testbenet) och utan handstöd. Testbenets häl placeras nedanför, lite bakom stolskant."
             android:textAppearance="@style/TextCustomNormal"/>
 
         <LinearLayout
